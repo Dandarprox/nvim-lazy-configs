@@ -3,5 +3,11 @@
 -- Add any additional keymaps here
 
 local base_opts = { noremap = true, silent = true }
+local Util = require("lazyvim.util")
+local map = Util.safe_keymap_set
 
-vim.api.nvim_set_keymap("n", "<leader>am", "<S-v>$%", base_opts)
+map("n", "<leader>am", "<S-v>$%", base_opts)
+
+map("n", "<leader>gg", function()
+  Util.terminal({ "gitui" }, { cwd = Util.root(), esc_esc = false, ctrl_hjkl = false })
+end, { desc = "GITUI (root dir)" })

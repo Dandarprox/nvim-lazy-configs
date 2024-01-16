@@ -1,5 +1,5 @@
 return {
-  "chriskempson/base16-vim",
+  "Mofiqul/vscode.nvim",
   lazy = true,
   priority = 1000,
 }

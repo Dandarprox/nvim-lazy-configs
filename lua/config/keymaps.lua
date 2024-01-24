@@ -11,3 +11,5 @@ map("n", "<leader>am", "<S-v>$%", base_opts)
 map("n", "<leader>gg", function()
   Util.terminal({ "gitui" }, { cwd = Util.root(), esc_esc = false, ctrl_hjkl = false })
 end, { desc = "GITUI (root dir)" })
+
+map("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")

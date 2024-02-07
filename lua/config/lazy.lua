@@ -9,11 +9,15 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
+    { "danishprakash/vim-yami" },
+    { "tpope/vim-vividchalk" },
+
     {
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
       opts = {
-        colorscheme = "darkplus",
+        -- colorscheme = "darkplus",
+        colorscheme = "yami",
       },
     },
     -- import any extras modules here

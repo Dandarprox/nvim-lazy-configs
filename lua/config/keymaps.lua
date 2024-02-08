@@ -4,6 +4,7 @@
 
 local base_opts = { noremap = true, silent = true }
 local Util = require("lazyvim.util")
+local cmp = require("cmp")
 local map = Util.safe_keymap_set
 
 map("n", "<leader>am", "<S-v>$%", base_opts)
@@ -22,4 +23,11 @@ map("n", "<leader>cc", ":CopilotChat ", {
   noremap = true,
   silent = true,
   desc = "Copilot Chat",
+})
+map("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+
+cmp.setup({
+  mapping = {
+    ["<C-x>"] = cmp.mapping.complete(),
+  },
 })

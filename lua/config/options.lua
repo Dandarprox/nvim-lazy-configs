@@ -10,7 +10,6 @@ vim.g.gruvbox_material_background = "hard"
 vim.g.gruvbox_material_better_performance = 1
 
 vim.opt.list = false
-vim.opt.shell = "pwsh.exe"
 
 -- Disable conceal
 vim.opt.conceallevel = 0

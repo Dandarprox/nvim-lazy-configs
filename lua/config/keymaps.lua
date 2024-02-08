@@ -31,3 +31,4 @@ cmp.setup({
     ["<C-x>"] = cmp.mapping.complete(),
   },
 })
+map("n", "<leader>nn", ":NoNeckPain<CR>")

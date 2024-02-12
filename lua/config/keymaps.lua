@@ -14,3 +14,4 @@ end, { desc = "GITUI (root dir)" })
 
 map("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
 map("n", "<leader>nn", ":NoNeckPain<CR>")
+map("v", "<leader>x", '"+y')

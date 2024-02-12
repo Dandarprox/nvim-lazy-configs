@@ -25,6 +25,7 @@ map("n", "<leader>cc", ":CopilotChat ", {
   desc = "Copilot Chat",
 })
 map("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+map("n", "<leader>tn", ":Telescope notify<CR>")
 
 cmp.setup({
   mapping = {
